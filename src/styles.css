@@ -222,16 +222,16 @@ nav ol {
  /* ------------------------------------------------------------ *\
      Box
  \* ------------------------------------------------------------ */
- .box { margin: 0 5px; padding: 10px; background-color: #faf8f9; box-shadow: 0px 0px 120px 0px rgba(31, 32, 41, 0.1); }
+ .box { margin: 0 5px; padding: 10px 15px; background-color: #faf8f9; box-shadow: 0px 0px 120px 0px rgba(31, 32, 41, 0.1); }
  .box .box__head { padding-bottom: 20px; }
- .box .box__head h3 { font-weight: 500; letter-spacing: 0.07px; }
- .box .box__image { max-width: 90%; margin: 0 auto; text-align: center; padding-bottom: 10px;  border-bottom: 1px solid #e8dcdb; }
+ .box .box__head h3 { font-size: 16px; font-weight: 500; letter-spacing: 0.07px; }
+ .box .box__image { margin: 0 auto; text-align: center; padding-bottom: 10px;  border-bottom: 1px solid #e8dcdb; }
  .box .box__image img { border-radius: 50%; max-width: 200px; }
 
  /* ------------------------------------------------------------ *\
      List Details
  \* ------------------------------------------------------------ */
- .list-details { align-items: center; list-style: none; padding: 20px; margin: 0; font-weight: 500; font-size: 14px;  }
+ .list-details { align-items: center; list-style: none; padding: 20px 0; margin: 0; font-weight: 500; font-size: 14px;  }
 
 .list-details li { display: flex; align-items: center; }
 

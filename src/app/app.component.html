@@ -9,7 +9,7 @@
                                 <mat-icon>dashboard</mat-icon>
                                 
                                 <span>
-                                	Dashboard	
+                                	Logo	
                                 </span>
                             </a>
 
@@ -132,9 +132,15 @@
 
                         			<div class="col col-1of3">
                         				<div class="box">
-                        					<p>
-                        						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique ipsa, eligendi cumque voluptatum minus soluta odit ut excepturi ex tempore.
-                        					</p>
+                        					<div class="box__head">
+                        						<h3>
+                        							Activities
+                        						</h3>
+                        					</div><!-- /.box__head -->
+                                            
+                                            <div class="box__body">
+                                                <canvas id="chart"> {{ chart }} </canvas>
+                                            </div><!-- /.box__body -->
                         				</div><!-- /.box -->	
                         			</div><!-- /.col col-1of2 -->
                         		</div><!-- /.cols -->
