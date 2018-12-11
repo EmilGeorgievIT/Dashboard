@@ -10,14 +10,14 @@
             <img src="assets/images/profile_avatar.png" alt="">
         </div>
         <!-- /.box__image -->
-        <ul class="list-details" *ngFor="let index of users">
+        <ul class="list-details" *ngFor="let item of users">
             <li>
                 <span>
                     First Name:
                 </span>
 
                 <strong>
-                    {{ index.name }}
+                    {{ item.name }}
                 </strong>
             </li>
 
@@ -27,7 +27,7 @@
                 </span>
 
                 <strong>
-                    {{ index.lastName }}
+                    {{ item.lastName }}
                 </strong>
             </li>
 
@@ -37,7 +37,7 @@
                 </span>
 
                 <strong>
-                  {{ index.address }}
+                  {{ item.address }}
                 </strong>
             </li>
 
@@ -47,7 +47,7 @@
                 </span>
 
                 <strong>
-                    {{ index.email }}
+                    {{ item.email }}
                 </strong>
             </li>
         </ul>

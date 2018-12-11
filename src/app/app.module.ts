@@ -14,6 +14,8 @@ import { ProcessingComponent } from './processing/processing.component';
 import { ActivityComponent } from './activity/activity.component';
 import { CalendarComponent } from './calendar/calendar.component';
 import { UserService } from './services/user.service';
+import { NavigationComponent } from './navigation/navigation.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { UserService } from './services/user.service';
     ProfileComponent,
     ProcessingComponent,
     ActivityComponent,
-    CalendarComponent
+    CalendarComponent,
+    NavigationComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,

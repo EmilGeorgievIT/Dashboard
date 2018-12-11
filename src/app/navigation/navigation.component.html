@@ -1,0 +1,36 @@
+<nav class="nav-profile">
+    <ul *ngFor="let item of users">
+        <li>
+            <a href="#">
+                <span>
+                    Notifications
+                </span>
+
+                <mat-icon>
+                    notifications
+                </mat-icon>
+            </a>
+        </li>
+
+        <li>
+            <a href="#">
+                <span>
+                    Messages
+                </span>
+
+                <mat-icon>message</mat-icon>
+            </a>
+        </li>
+
+        <li>
+            <a href="#">
+                <img src="assets/images/avatar.png" alt="">
+
+                <span>
+                    Hello {{ item.name }}
+                </span>
+            </a>
+        </li>
+    </ul>
+</nav>
+<!-- /.nav -->

@@ -12,83 +12,7 @@
                                     Logo
                                 </span>
                             </a>
-
-                            <nav class="nav-sidebar">
-                                <ul>
-                                    <li>
-                                        <a href="#">
-                                            <mat-icon>event_available</mat-icon>
-
-                                            <span>
-                                                My task
-                                            </span>
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#">
-                                            <mat-icon>folder</mat-icon>
-
-                                            <span>
-                                                My projects
-                                            </span>
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#">
-                                            <mat-icon>link</mat-icon>
-
-                                            <span>
-                                                Link 3
-                                            </span>
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#">
-                                            <mat-icon>link</mat-icon>
-
-                                            <span>
-                                                Link 4
-                                            </span>
-                                        </a>
-                                    </li>
-
-                                    <li class="visible-xs-block">
-                                         <a href="#">
-                                            <mat-icon>
-                                                notifications
-                                            </mat-icon>
-
-                                            <span>
-                                                Notifications
-                                            </span>
-                                        </a>
-                                    </li>
-
-                                    <li class="visible-xs-block">
-                                        <a href="#">
-                                            <mat-icon>message</mat-icon>
-
-                                            <span>
-                                                Messages
-                                            </span>
-                                        </a>
-                                    </li>
-
-                                    <li class="visible-xs-block">
-                                        <a href="#">
-                                            <span>
-                                                Hello {{ name }}
-                                            </span>
-
-                                            <img src="assets/images/avatar.png" alt="">
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
-                            <!-- /.nav -->
+                            <app-sidebar></app-sidebar>
                         </div>
                         <!-- /.section__aside -->
                     </div>
@@ -98,42 +22,7 @@
                         <div class="section__content">
                             <div class="profile">
                                 <div class="profile__content">
-                                    <nav class="nav-profile">
-                                        <ul>
-                                            <li>
-                                                <a href="#">
-                                                    <span>
-                                                        Notifications
-                                                    </span>
-                                                    
-                                                    <mat-icon>
-                                                        notifications
-                                                    </mat-icon>
-                                                </a>
-                                            </li>
-
-                                            <li>
-                                                <a href="#">
-                                                    <span>
-                                                        Messages
-                                                    </span>
-
-                                                    <mat-icon>message</mat-icon>
-                                                </a>
-                                            </li>
-
-                                            <li>
-                                                <a href="#">
-                                                    <img src="assets/images/avatar.png" alt="">
-                                                    
-                                                    <span>
-                                                        Hello {{ name }}
-                                                    </span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </nav>
-                                    <!-- /.nav -->
+                                    <app-navigation></app-navigation>
                                 </div>
                                 <!-- /.profile__content -->
                             </div>
