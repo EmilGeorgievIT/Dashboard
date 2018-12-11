@@ -1,5 +1,5 @@
 <nav class="nav-sidebar">
-    <ul>
+    <ul *ngFor="let item of users">
         <li>
             <a href="#">
                 <mat-icon>event_available</mat-icon>
@@ -64,11 +64,11 @@
 
         <li class="visible-xs-block">
             <a href="#">
-                <span>
-                    Hello {{ name }}
-                </span>
+                <img src="{{item.avatar}}.png" alt="">
 
-                <img src="assets/images/avatar.png" alt="">
+                <span>
+                    Hello {{ item.name }}
+                </span>
             </a>
         </li>
     </ul>

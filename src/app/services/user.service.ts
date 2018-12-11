@@ -6,14 +6,15 @@ import { Injectable } from '@angular/core';
 export class UserService {
 
   constructor() { }
-  getData(){
+  getData() {
     return [
       {
         name: 'Emil',
         lastName: 'Georgiev',
         address: 'Ireland Dublin',
         email: 'emil_georgiev_it@abv.bg',
-        picture: 'assets/images/profile_avatar'
+        picture: 'assets/images/profile_avatar',
+        avatar: 'assets/images/avatar'
       }
     ]
   }

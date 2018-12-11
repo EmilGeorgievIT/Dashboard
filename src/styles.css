@@ -482,13 +482,13 @@ body {
 
 @media(max-width: 768px) {
     .list-details {
-        font-size: 13px;
+        font-size: 12px;
     }
     .list-details span {
-        width: 40%;
+        width: 30%;
     }
     .list-details strong {
-        width: 60%;
+        width: 70%;
     }
 }
 
