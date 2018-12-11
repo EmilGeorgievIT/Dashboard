@@ -13,8 +13,9 @@ import { ProfileComponent } from './profile/profile.component';
 import { ProcessingComponent } from './processing/processing.component';
 import { ActivityComponent } from './activity/activity.component';
 import { CalendarComponent } from './calendar/calendar.component';
+import { UserService } from './services/user.service';
 
-
+ 
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +31,7 @@ import { CalendarComponent } from './calendar/calendar.component';
     MatNativeDateModule,
     MatIconModule
   ],
-  providers: [MatDatepickerModule],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule {

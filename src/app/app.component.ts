@@ -1,11 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
-import {
-  MatDatepickerModule,
-  MatNativeDateModule,
-  MatFormFieldModule,
-  MatInputModule
-} from '@angular/material';
+import { UserService } from './services/user.service';
 
 @Component({
   selector: 'app-root',
@@ -14,9 +8,11 @@ import {
 })
 export class AppComponent implements OnInit {
   title = 'Dashboard';
-  constructor() {
+  users = {};
+  constructor(private user: UserService ) {
   }
 
   ngOnInit() {
+    this.users = this.user.getData();
   }
 }

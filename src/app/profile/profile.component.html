@@ -10,35 +10,45 @@
             <img src="assets/images/profile_avatar.png" alt="">
         </div>
         <!-- /.box__image -->
-        <ul class="list-details">
+        <ul class="list-details" *ngFor="let index of users">
             <li>
                 <span>
-          First Name:
-        </span>
+                    First Name:
+                </span>
 
                 <strong>
-          Emil
-        </strong>
+                    {{ index.name }}
+                </strong>
             </li>
 
             <li>
                 <span>
-          Last Name:
-        </span>
+                    Last Name:
+                </span>
 
                 <strong>
-          Georgiev
-        </strong>
+                    {{ index.lastName }}
+                </strong>
             </li>
 
             <li>
                 <span>
-          Address:
-        </span>
+                     Address:
+                </span>
 
                 <strong>
-          Dublin Center
-        </strong>
+                  {{ index.address }}
+                </strong>
+            </li>
+
+            <li>
+                <span>
+                    Email:
+                </span>
+
+                <strong>
+                    {{ index.email }}
+                </strong>
             </li>
         </ul>
         <!-- /.list-details -->
