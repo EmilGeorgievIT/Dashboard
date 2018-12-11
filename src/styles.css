@@ -45,6 +45,7 @@ body {
     font-smoothing: antialiased;
     text-size-adjust: none;
     font-family: 'Poppins', sans-serif;
+    min-width: 375px;
 }
 
 img,
@@ -167,10 +168,6 @@ nav ol {
     list-style: none outside none;
 }
 
-body {
-    min-width: 320px;
-}
-
 
 /* ------------------------------------------------------------ *\
     Wrapper
@@ -193,10 +190,10 @@ body {
 
 
 /* ------------------------------------------------------------ *\
-    Section Admin
+    Section Dashboard
 \* ------------------------------------------------------------ */
 
-.section-admin {
+.section-dashboard {
     min-height: 100vh;
     padding: 40px 0;
     background-size: cover;
@@ -204,36 +201,36 @@ body {
     background-repeat: no-repeat;
 }
 
-.section-admin .section__body {
+.section-dashboard .section__body {
     background-color: #f9f7f7;
 }
 
-.section-admin .cols {
+.section-dashboard .cols {
     display: flex;
 }
 
-.section-admin .col {
+.section-dashboard .col {
     flex: 0 1 100%;
     max-width: 100%;
 }
 
-.section-admin .col--1of3 {
+.section-dashboard .col--1of3 {
     max-width: 300px;
     flex: 0 1 300px;
 }
 
-.section-admin .section__aside {
+.section-dashboard .section__aside {
     min-height: 100vh;
     height: 100%;
     padding: 15px;
     background-color: #f2e7e8;
 }
 
-.section-admin .section__content {
+.section-dashboard .section__content {
     padding: 15px;
 }
 
-.section-admin .logo {
+.section-dashboard .logo {
     display: flex;
     margin-bottom: 20px;
     align-items: center;
@@ -241,25 +238,25 @@ body {
     flex: 0;
 }
 
-.section-admin .logo span {
+.section-dashboard .logo span {
     margin-left: 10px;
 }
 
 @media(max-width: 1024px) {
-    .section-admin .cols {
+    .section-dashboard .cols {
         flex-wrap: wrap;
     }
-    .section-admin .col {
+    .section-dashboard .col {
         max-width: 100%;
         flex: 0 1 100%;
     }
-    .section-admin .section__aside {
+    .section-dashboard .section__aside {
         min-height: 100%;
     }
 }
 
 @media(max-width: 768px) {
-    .section-admin {
+    .section-dashboard {
         font-size: 13px;
     }
 }
@@ -331,7 +328,7 @@ body {
     margin-left: auto;
 }
 
-@media(max-width: 768px) {
+@media(max-width: 1024px) {
     .profile .profile__content {
         max-width: 100%;
     }
@@ -374,6 +371,12 @@ body {
 
 .nav-profile a:hover {
     color: #ff8600;
+}
+
+@media(max-width: 1024px) {
+    .nav-profile ul {
+        justify-content: center
+    }
 }
 
 @media(max-width: 480px) {
