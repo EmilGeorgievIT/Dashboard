@@ -12,7 +12,8 @@ export class UserService {
         name: 'Emil',
         lastName: 'Georgiev',
         address: 'Ireland Dublin',
-        email: 'emil_georgiev_it@abv.bg'
+        email: 'emil_georgiev_it@abv.bg',
+        picture: 'assets/images/profile_avatar'
       }
     ]
   }

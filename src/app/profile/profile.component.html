@@ -1,4 +1,4 @@
-<div class="box">
+<div class="box" *ngFor="let item of users">
     <div class="box__head">
         <h3>
             Profile Information
@@ -7,10 +7,10 @@
     <!-- /.box__head -->
     <div class="box__body">
         <div class="box__image">
-            <img src="assets/images/profile_avatar.png" alt="">
+            <img src="{{item.picture}}.png" alt="">
         </div>
         <!-- /.box__image -->
-        <ul class="list-details" *ngFor="let item of users">
+        <ul class="list-details">
             <li>
                 <span>
                     First Name:
