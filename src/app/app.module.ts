@@ -9,11 +9,19 @@ import {
   MatFormFieldModule,
   MatInputModule
 } from '@angular/material';
+import { ProfileComponent } from './profile/profile.component';
+import { ProcessingComponent } from './processing/processing.component';
+import { ActivityComponent } from './activity/activity.component';
+import { CalendarComponent } from './calendar/calendar.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ProfileComponent,
+    ProcessingComponent,
+    ActivityComponent,
+    CalendarComponent
   ],
   imports: [
     BrowserModule,
