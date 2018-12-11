@@ -167,6 +167,9 @@ nav ol {
     list-style: none outside none;
 }
 
+body {
+    min-width: 320px;
+}
 
 /* ------------------------------------------------------------ *\
     Contaienr
@@ -232,6 +235,24 @@ nav ol {
     margin-left: 10px;
 }
 
+@media(max-width: 1024px){
+    .section-admin .cols {
+        flex-wrap: wrap;
+    }
+    .section-admin .col {
+        max-width: 100%;
+        flex: 0 1 100%;
+    }   
+    .section-admin .section__aside{
+        min-height: 100%; 
+    }
+}
+
+@media(max-width: 768px){
+    .section-admin { 
+        font-size: 13px;     
+    }
+}
 
 /* ------------------------------------------------------------ *\
     Nav Sidebar
@@ -261,6 +282,22 @@ nav ol {
     margin-left: 10px;
 }
 
+@media(max-width: 1024px){
+    .nav-sidebar ul {
+        text-align: center; 
+    }
+    .nav-sidebar li { 
+        display: inline-block;
+    }   
+    .nav-sidebar li ~ li {
+        margin-left: 10px;
+    }
+}
+
+@media(max-width: 480px){
+        
+}
+
 
 /* ------------------------------------------------------------ *\
     Profile
@@ -278,7 +315,17 @@ nav ol {
     margin-left: auto;
 }
 
-.profile .nav-profile ul {
+@media(max-width: 768px){
+    .profile .profile__content {
+        max-width: 100%;
+    }
+}
+
+/* ------------------------------------------------------------ *\
+    Nav Profile
+\* ------------------------------------------------------------ */
+
+.nav-profile ul {
     display: flex;
     align-items: center;
     list-style: none;
@@ -286,32 +333,31 @@ nav ol {
     margin: 0;
 }
 
-.profile .nav-profile li {
+.nav-profile li {
     display: inline-block;
 }
 
-.profile .nav-profile li~li {
+.nav-profile li~li {
     margin-left: 10px;
 }
 
-.profile .nav-profile a {
+.nav-profile a {
     display: flex;
     align-items: center;
     text-decoration: none;
 }
 
-.profile .nav-profile a span {
+.nav-profile a span {
     margin-right: 10px;
 }
 
-.profile .nav-profile li:last-child span {
+.nav-profile li:last-child span {
     margin: 0 0 0 10px;
 }
 
-.profile .nav-profile a:hover {
+.nav-profile a:hover {
     color: #ff8600;
 }
-
 
 /* ------------------------------------------------------------ *\
     Grid
@@ -408,4 +454,16 @@ nav ol {
     display: block;
     width: 70%;
     color: #404447;
+}
+
+@media(max-width: 768px){
+    .list-details {
+        font-size: 13px;
+    }
+    .list-details span{ 
+        width: 40%;  
+    }
+    .list-details strong{ 
+        width: 60%;  
+    }
 }
