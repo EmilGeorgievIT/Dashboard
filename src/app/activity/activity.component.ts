@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Chart } from 'chart.js';
-
 @Component({
   selector: 'app-activity',
   templateUrl: './activity.component.html',
