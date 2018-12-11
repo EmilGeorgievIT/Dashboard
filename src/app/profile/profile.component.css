@@ -1,0 +1,51 @@
+
+/* ------------------------------------------------------------ *\
+    Profile
+\* ------------------------------------------------------------ */
+
+.profile {
+    border-bottom: 1px solid #e8dcdb;
+    padding-bottom: 15px;
+}
+
+.profile .profile__content {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin-left: auto;
+}
+
+.profile .nav-profile ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.profile .nav-profile li {
+    display: inline-block;
+}
+
+.profile .nav-profile li~li {
+    margin-left: 10px;
+}
+
+.profile .nav-profile a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.profile .nav-profile a span {
+    margin-right: 10px;
+}
+
+.profile .nav-profile li:last-child span {
+    margin: 0 0 0 10px;
+}
+
+.profile .nav-profile a:hover {
+    color: #ff8600;
+}
+
